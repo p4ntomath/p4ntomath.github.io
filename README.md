@@ -14,7 +14,7 @@ A fast, responsive, and modern personal portfolio website built with pure semant
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 - **Zero-Dependency Architecture:** Pure static files without Node.js or bundlers. Deploys instantly to GitHub Pages, Netlify, or Vercel.
 - **Dark Mode Support:** Auto-detects system color scheme preference and persists user preference across visits via `localStorage` with zero flash of unstyled content (FOUC).
@@ -25,7 +25,7 @@ A fast, responsive, and modern personal portfolio website built with pure semant
 
 ---
 
-## 📁 Directory Structure
+##  Directory Structure
 
 ```
 portfolio/
@@ -62,7 +62,7 @@ portfolio/
 
 ---
 
-## 🌐 Deploying to GitHub Pages (Step-by-Step)
+## Deploying to GitHub Pages (Step-by-Step)
 
 ### Option A: If your repo is `p4ntomath.github.io` (Recommended)
 
