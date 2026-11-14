@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Google Analytics: Optional GA4 tracking ID -->
+	<!--
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-XXXXXXXXXX');
+	</script>
+	-->
+
+	<meta charset="UTF-8">
+	<title>Mahlatse Rabothata — Portfolio</title>
+
+	<meta name="author" content="Mahlatse Rabothata">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="Portfolio of Mahlatse Rabothata — Computer Science Graduate pursuing BSc Honours in Computer Science, specializing in Artificial Intelligence, Data Analytics, and Software Engineering.">
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://mahlatse-rabothata.me/">
+
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://mahlatse-rabothata.me/">
+	<meta property="og:title" content="Mahlatse Rabothata — Portfolio">
+	<meta property="og:description" content="Computer Science Graduate — AI, Data & Software Engineering. Explore my projects, experience, research, and technical skills.">
+	<meta property="og:image" content="images/avatar.webp">
+	<meta property="og:locale" content="en_US">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Mahlatse Rabothata — Portfolio">
+	<meta name="twitter:description" content="Computer Science Graduate — AI, Data & Software Engineering. Explore my projects, experience, research, and technical skills.">
+	<meta name="twitter:image" content="images/avatar.webp">
+
+	<!-- Security -->
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+	<meta http-equiv="Content-Security-Policy"
+		content="default-src 'self';
+				 script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com;
+				 style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+				 font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net;
+				 img-src 'self' data: https:;
+				 connect-src 'self' https://formsubmit.co https://www.google-analytics.com;">
+
+	<!-- Preconnect to external domains -->
+	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+	<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
+	<!-- Preload critical resources -->
+	<link rel="preload" href="images/avatar.webp" as="image" type="image/webp">
+	<link rel="preload" href="js/components.js" as="script">
+	<link rel="preload" href="css/stylesheet.min.css" as="style">
+	<link rel="preload" href="https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2" as="font"
+		type="font/woff2" crossorigin>
+	<link rel="preload" href="https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2" as="font"
+		type="font/woff2" crossorigin>
+
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mail.css" media="print" onload="this.media='all'">
+	<noscript>
+		<link rel="stylesheet" type="text/css" href="css/mail.css">
+	</noscript>
+
+	<!-- Immediate theme detection to prevent flash -->
+	<script>
+		var storedTheme = localStorage.getItem('theme');
+		if (storedTheme === 'dark' || (!storedTheme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+			document.documentElement.classList.add('dark-mode');
+		}
+		document.documentElement.style.visibility = 'visible';
+
+		if (window.location.hash) {
+			history.scrollRestoration = 'manual';
+			window._pendingScrollHash = window.location.hash.substring(1);
+			history.replaceState(null, '', window.location.pathname + window.location.search);
+			document.documentElement.style.visibility = 'hidden';
+		}
+	</script>
+
+	<script src="js/components.js"></script>
+	<script src="js/dark_mode.js" defer></script>
+	<script src="js/mail.js" defer></script>
+	<script src="js/last_modified.js" defer></script>
+	<script src="js/hamburger.js" defer></script>
+	<script src="js/navbar_scroll.js" defer></script>
+	<script src="js/navbar_active.js" defer></script>
+	<script src="js/bio_scroll.js" defer></script>
+	<script src="js/smooth_scroll.js" defer></script>
+	<script src="js/cross_page_scroll.js" defer></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+		media="print" onload="this.media='all'" />
+	<noscript>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+	</noscript>
+
+	<!-- Favicon and App Icons -->
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+	<link rel="manifest" href="site.webmanifest">
+	<meta name="msapplication-TileColor" content="#8dd3e3">
+	<meta name="msapplication-TileImage" content="images/mstile-150x150.png">
+	<meta name="theme-color" content="#8dd3e3">
+
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Mahlatse Rabothata",
+		"url": "https://mahlatse-rabothata.me/",
+		"image": "https://mahlatse-rabothata.me/images/avatar.webp",
+		"jobTitle": "Computer Science Graduate — AI, Data & Software Engineering",
+		"alumniOf": [
+			{
+				"@type": "CollegeOrUniversity",
+				"name": "University of Pretoria"
+			},
+			{
+				"@type": "CollegeOrUniversity",
+				"name": "University of the Witwatersrand"
+			}
+		],
+		"sameAs": [
+			"https://github.com/p4ntomath",
+			"https://linkedin.com/in/mahlatse-rabothata-14641a287",
+			"https://mahlatse-rabothata.me"
+		]
+	}
+	</script>
+</head>
+
+<body>
+	<a href="#main-content" class="skip-link">Skip to main content</a>
+	<site-navbar></site-navbar>
+
+	<span id="main-content"></span>
+	<table class="section" id="Bio" style="margin-top: 30px;">
+		<tbody>
+			<tr style="padding:0px">
+				<td>
+					<table class="section profile-section">
+						<tbody>
+							<tr style="padding:0px">
+								<td style="width:100%;vertical-align:middle;text-align:center;">
+									<!-- Profile Image -->
+									<div style="margin-bottom: 20px;">
+										<a href="images/avatar.webp"><img
+												style="width:260px;height:260px;max-width:100%;object-fit: cover; border-radius: 50%; box-shadow: 0 4px 20px rgba(0,0,0,0.15);"
+												alt="Profile photo of Mahlatse Rabothata"
+												src="images/avatar.webp" class="hoverZoomLink"
+												loading="eager" decoding="async" fetchpriority="high" width="260" height="260"></a>
+									</div>
+
+									<!-- Name & Title -->
+									<h1 class="name" id="Bio-header"
+										style="text-align:center; font-size:2.5em; margin-top: 10px; margin-bottom: 5px;">
+										Mahlatse Rabothata
+									</h1>
+									<p style="text-align:center; font-size:1.05em; color:var(--text-secondary, #555); margin-top: 0; margin-bottom: 12px; font-weight: 500;">
+										Computer Science Graduate &mdash; AI, Data &amp; Software Engineering
+									</p>
+									<p style="text-align:center; font-size:0.9em; color:#777; margin-top: 0; margin-bottom: 18px;">
+										<i class="bi bi-geo-alt"></i> Johannesburg, Gauteng, South Africa
+									</p>
+
+									<!-- Links -->
+									<p style="text-align:center; margin-top: 5px; margin-bottom: 35px; font-size: 0.9em;">
+										<a href="data/Mahlatse_Rabothata_CV.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-pdf"></i> Resume</a> &nbsp;/&nbsp;
+										<a href="mailto:morwawarabothata5@gmail.com"><i class="bi bi-envelope"></i> Email</a> &nbsp;/&nbsp;
+										<a href="https://github.com/p4ntomath" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> GitHub</a> &nbsp;/&nbsp;
+										<a href="https://linkedin.com/in/mahlatse-rabothata-14641a287" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i> LinkedIn</a> &nbsp;/&nbsp;
+										<a href="https://wa.me/27630311427" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> WhatsApp</a> &nbsp;/&nbsp;
+										<a href="tel:+27630311427"><i class="bi bi-telephone"></i> +27 63 031 1427</a>
+									</p>
+
+									<!-- Bio -->
+									<div style="text-align: justify; max-width: 820px; margin: 20px auto; line-height: 1.7;">
+										<p style="text-align: center; font-size: 1.1em; margin-bottom: 18px;">
+											<b>BSc Honours candidate in Computer Science at the University of Pretoria, holding a BSc in Computer Science &amp; Applied Mathematics from Wits University.</b>
+										</p>
+										<p style="margin-bottom: 14px;">
+											I build robust software solutions spanning artificial intelligence, cloud infrastructure, and full-stack development. My technical work ranges from architecting containerized microservices and automating operational workflows to implementing deep learning models for computer vision and scientific simulations.
+										</p>
+										<p>
+											Driven by digital transformation and process automation, I combine strong analytical problem-solving with practical experience delivering production software for clients, mentoring university cohorts in computational methods, and collaborating in agile teams.
+										</p>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="section-bottom-indicator" data-section="Bio"></div>
+
+					<!-- Experience Section -->
+					<table class="section">
+						<tbody>
+							<tr>
+								<td class="sub-section">
+									<h2 id="Experience">Experience</h2>
+
+									<ul>
+										<li>
+											<b>Freelance Full-Stack Developer</b> [Jan 2025 – Dec 2025] <br>
+											<i>Self-Employed | Johannesburg, South Africa</i> <br>
+											<ul>
+												<li>Designed and delivered custom web and mobile applications for startups, individual entrepreneurs, and academic clients from initial requirements gathering to production deployment.</li>
+												<li>Built RESTful backend APIs, database schemas, and responsive user interfaces using React, Flutter, Python, and Firebase.</li>
+												<li>Managed client communications, sprint delivery timelines, and QA testing balancing technical requirements with commercial goals.</li>
+												<li><b>Technologies</b>: React.js, Flutter, Python, Firebase, REST APIs, Cloud Deployment.</li>
+											</ul>
+										</li>
+									</ul>
+
+									<ul>
+										<li>
+											<b>Academic Tutor</b> [Feb 2025 – Nov 2025] <br>
+											<a href="https://www.wits.ac.za/" target="_blank" rel="noopener noreferrer">University of the Witwatersrand (Wits)</a> | Johannesburg, South Africa <br>
+											<ul>
+												<li>Tutored and mentored <b>40+ first-year undergraduate students</b> in Applied Mathematics and Computer Science through weekly structured tutorials and practical lab sessions.</li>
+												<li>Demonstrated numerical methods, mathematical modeling, and computational simulations utilizing Python, NumPy, SciPy, and Matplotlib.</li>
+												<li>Guided students through algorithmic problem decomposition, debugging techniques, and examination preparation to strengthen core conceptual mastery.</li>
+												<li><b>Areas</b>: Applied Mathematics, Numerical Analysis, Python, NumPy, SciPy, Matplotlib, Technical Mentorship.</li>
+											</ul>
+										</li>
+									</ul>
+
+									<ul>
+										<li>
+											<b>Coding Tutor</b> [Apr 2025 – Nov 2025] <br>
+											<b>Wits Coding &amp; Digital Innovation Society</b> | Johannesburg, South Africa <br>
+											<ul>
+												<li>Delivered peer-led hands-on workshops covering Python, C++, data structures, algorithmic optimization, debugging, and web development fundamentals.</li>
+												<li>Conducted constructive code reviews and guided undergraduate students through structured problem-solving for coursework and competitive programming challenges.</li>
+												<li><b>Areas</b>: Python, C++, Data Structures &amp; Algorithms, Code Review, Community Mentorship.</li>
+											</ul>
+										</li>
+									</ul>
+
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="section-bottom-indicator" data-section="Experience"></div>
+
+					<!-- Education & Certification Section -->
+					<table class="section">
+						<tbody>
+							<tr>
+								<td class="sub-section">
+									<h2 id="Education">Education &amp; Certification</h2>
+
+									<ul>
+										<li>
+											<b>BSc Honours in Computer Science</b> [Feb 2026 – Present] <br>
+											<a href="https://www.up.ac.za/" target="_blank" rel="noopener noreferrer">University of Pretoria (UP)</a>, South Africa <br>
+											<ul>
+												<li>Postgraduate study specializing in Advanced Artificial Intelligence, Machine Learning Systems, Software Architecture, and Computing Research.</li>
+											</ul>
+										</li>
+									</ul>
+
+									<ul>
+										<li>
+											<b>Bachelor of Science (BSc) in Computer Science and Applied Mathematics</b> [Feb 2023 – Dec 2025] <br>
+											<a href="https://www.wits.ac.za/" target="_blank" rel="noopener noreferrer">University of the Witwatersrand (Wits)</a>, Johannesburg, South Africa <br>
+											<ul>
+												<li><b>Double Major</b>: Computer Science &amp; Applied Mathematics</li>
+												<li><b>Academic Honors &amp; Awards</b>:
+													<ul>
+														<li><b>Certificate of Merit</b>: Mobile Computing II (2024)</li>
+														<li><b>Top Achiever 2023</b>: Knockando Hall of Residence (Wits)</li>
+														<li><b>Golden Key International Honour Society Invitation</b>: Recognized in the Top 15% of academic achievers at Wits University (2023)</li>
+													</ul>
+												</li>
+												<li><b>Key Coursework</b>:
+													<ul>
+														<li>Software Design &amp; Mobile Computing</li>
+														<li>Data Structures and Analysis of Algorithms</li>
+														<li>Scientific Computing &amp; Mathematical Modelling</li>
+														<li>Mechanics &amp; Advanced Applied Mathematics</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+
+									<h3 style="margin-top: 25px; margin-bottom: 10px; font-size: 1.15em;">Industry Certifications</h3>
+
+									<ul>
+										<li>
+											<b>Cloud Practitioner Essentials</b> &mdash; Amazon Web Services (AWS) [Aug 2025]<br>
+											<ul>
+												<li>Core cloud architecture, global infrastructure, security, compute (EC2), networking (VPC), storage (S3), and cost management.</li>
+											</ul>
+										</li>
+									</ul>
+
+									<ul>
+										<li>
+											<b>Machine Learning Foundations</b> &mdash; Amazon Web Services (AWS) [Sep 2025]<br>
+											<ul>
+												<li>Principles of machine learning pipelines, feature engineering, model training and evaluation, supervised and unsupervised learning algorithms.</li>
+											</ul>
+										</li>
+									</ul>
+
+									<ul>
+										<li>
+											<b>Introduction to Cloud 101</b> &mdash; Amazon Web Services (AWS) [Sep 2025]<br>
+											<ul>
+												<li>Cloud computing principles, virtualization, scalability, elasticity, and high-availability systems design.</li>
+											</ul>
+										</li>
+									</ul>
+
+									<ul>
+										<li>
+											<b>Containerisation with Docker</b> &mdash; Amazon Web Services (AWS) [Sep 2025]<br>
+											<ul>
+												<li>Building, deploying, and managing microservice containers with Docker, multi-stage image optimization, and container security.</li>
+											</ul>
+										</li>
+									</ul>
+
+									<ul>
+										<li>
+											<b>Amazon Rekognition &amp; Textract</b> &mdash; Wits AWS Club [Jun 2024]<br>
+											<ul>
+												<li>Computer vision inference for automated image analysis, facial recognition, and OCR document text extraction.</li>
+											</ul>
+										</li>
+									</ul>
+
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="section-bottom-indicator" data-section="Education"></div>
+
+					<!-- Project Section -->
+					<table class="section">
+						<tbody>
+							<tr>
+								<td class="sub-section">
+									<h2 id="Project">Projects</h2>
+
+									<ul class="extra_gap">
+										<li>
+											<b><a href="https://dropsto-123.web.app/" target="_blank" rel="noopener noreferrer">DropSto</a> &mdash; Secure Cloud Storage Application</b> [2025]<br>
+											<ul>
+												<li>Built and deployed a privacy-conscious cloud storage platform enabling secure, PIN-protected storage buckets without requiring user account registration.</li>
+												<li>Implemented drag-and-drop file uploads, encrypted download tokens, shareable links, real-time storage metrics, and automated CI/CD pipeline deployments using GitHub Actions.</li>
+												<li><b>Technologies</b>: React.js, Tailwind CSS, Firebase Storage &amp; Firestore, Node.js, GitHub Actions.</li>
+												<li><b>Live Demo</b>: <a href="https://dropsto-123.web.app/" target="_blank" rel="noopener noreferrer">https://dropsto-123.web.app/</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<ul class="extra_gap">
+										<li>
+											<b><a href="https://ai-cover-letter-390046968827.europe-west1.run.app/" target="_blank" rel="noopener noreferrer">AI Cover Letter Generator (mycoverletter)</a></b> [2025]<br>
+											<ul>
+												<li>Architected and deployed an AI platform that dynamically analyzes candidate resumes and target job descriptions to synthesize personalized, professional cover letters.</li>
+												<li>Developed a microservices-based backend with FastAPI for document text extraction, prompt engineering, and automated PDF rendering; deployed on Google Cloud Run and AWS.</li>
+												<li><b>Technologies</b>: Python, FastAPI, Next.js, Google Cloud Run, Microservices, LLM APIs, Tailwind CSS.</li>
+												<li><b>Live Demo</b>: <a href="https://ai-cover-letter-390046968827.europe-west1.run.app/" target="_blank" rel="noopener noreferrer">https://ai-cover-letter-390046968827.europe-west1.run.app/</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<ul class="extra_gap">
+										<li>
+											<b><a href="https://re-search.azurewebsites.net/" target="_blank" rel="noopener noreferrer">University Research Collaboration Platform</a></b> [2024 – 2025]<br>
+											<ul>
+												<li>Contributed to a centralized web platform enabling university researchers to connect, manage collaborative research grants, track funding milestones, and streamline peer reviews.</li>
+												<li>Supported frontend UI architecture, real-time state management, quality assurance testing, and delivered feature iterations within an Agile/Scrum team workflow.</li>
+												<li><b>Technologies</b>: React.js, Tailwind CSS, Firebase, Microsoft Azure, Agile/Scrum, Git.</li>
+												<li><b>Live Demo</b>: <a href="https://re-search.azurewebsites.net/" target="_blank" rel="noopener noreferrer">https://re-search.azurewebsites.net/</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<ul class="extra_gap">
+										<li>
+											<b><a href="https://mahlatse-rabothata.netlify.app/" target="_blank" rel="noopener noreferrer">HxH-Inspired Interactive Portfolio Website</a></b> [2024 – 2025]<br>
+											<ul>
+												<li>Designed and engineered an interactive personal portfolio featuring Hunter x Hunter themes, 3D license card animations, retro phone navigation, and custom book flipping mechanics.</li>
+												<li>Built reusable UI components, smooth state transitions, and responsive mobile-first layouts with integrated backend messaging.</li>
+												<li><b>Technologies</b>: React.js, TypeScript, Tailwind CSS, Appwrite, Vite.</li>
+												<li><b>Live Demo</b>: <a href="https://mahlatse-rabothata.netlify.app/" target="_blank" rel="noopener noreferrer">https://mahlatse-rabothata.netlify.app/</a></li>
+											</ul>
+										</li>
+									</ul>
+
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="section-bottom-indicator" data-section="Project"></div>
+
+					<!-- Technical Skill Section -->
+					<table class="section">
+						<tbody>
+							<tr>
+								<td class="sub-section">
+									<h2 id="Technical_Skill">Technical Skills</h2>
+									<ul class="extra_gap">
+										<li><b>Programming Languages</b>: Python, C++, C, C#, Java, JavaScript (ES6+), TypeScript, R, SQL, HTML5, CSS3</li>
+										<li><b>Frameworks &amp; Web Development</b>: React.js, Next.js, FastAPI, Node.js, Express.js, Flutter, Django, Tailwind CSS, Vite</li>
+										<li><b>AI, Machine Learning &amp; Data</b>: PyTorch, TensorFlow, Scikit-learn, OpenCV, NumPy, SciPy, SymPy, Matplotlib, Power BI, MATLAB</li>
+										<li><b>Cloud, DevOps &amp; Databases</b>: AWS (EC2, Elastic Beanstalk, Rekognition, Textract), Microsoft Azure, Google Cloud Run, Firebase, Appwrite, Docker, GitHub Actions, MySQL, PostgreSQL, MongoDB, NoSQL</li>
+										<li><b>Developer Tools &amp; Operating Systems</b>: Git &amp; GitHub, Linux / Ubuntu, Windows, Android Studio, VS Code, Figma, Postman</li>
+										<li><b>Professional Competencies</b>: Analytical Problem-Solving, Agile &amp; Scrum Delivery, Technical Mentorship, Systems Modeling, Cross-Functional Teamwork</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="section-bottom-indicator" data-section="Technical_Skill"></div>
+
+					<!-- Research Section -->
+					<table class="section">
+						<tbody>
+							<tr>
+								<td class="sub-section">
+									<h2 id="Research">Research &amp; Scientific Simulations</h2>
+									<ul>
+										<li>
+											<b>Agricultural Computer Vision Research:</b> <b><a
+												href="https://github.com/p4ntomath/gls-lesion-segmentation" target="_blank" rel="noopener noreferrer">Grey Leaf Spot (GLS) Lesion Segmentation in Maize: Evaluating U-Net &amp; Attention U-Net</a></b> [2025]<br>
+											<ul>
+												<li><b>Focus</b>: Deep Learning Semantic Segmentation &amp; Objective Disease Severity Quantification</li>
+												<li><b>Overview</b>: Investigated deep learning semantic segmentation of Grey Leaf Spot (GLS) lesions (*Cercospora zeae-maydis*) in maize leaf field imagery to replace subjective visual inspection with precise pixel-level leaf area coverage and disease quantification.</li>
+												<li><b>GitHub Repository</b>: <a href="https://github.com/p4ntomath/gls-lesion-segmentation" target="_blank" rel="noopener noreferrer">https://github.com/p4ntomath/gls-lesion-segmentation</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<ul>
+										<li>
+											<b>Computational Mechanics Simulation:</b> <b><a
+												href="https://github.com/p4ntomath/Mechanics-n-link-pendulum" target="_blank" rel="noopener noreferrer">N-Link Pendulum Chaotic Dynamics Simulation</a></b> [Wits University, 2024]<br>
+											<ul>
+												<li><b>Type</b>: Undergraduate Applied Mathematics &amp; Mechanics Project</li>
+												<li><b>Overview</b>: A computational physics simulation and animation modeling the chaotic, non-linear dynamics of an N-link coupled pendulum system. Derived equations of motion through Lagrangian mechanics and solved the resulting coupled second-order differential equations using numerical integration algorithms in Python.</li>
+												<li><b>Technologies</b>: Python, NumPy, SciPy, Matplotlib Animation, Lagrangian Mechanics, Numerical Integration (ODEs), Dynamical Systems.</li>
+												<li><b>GitHub Repository</b>: <a href="https://github.com/p4ntomath/Mechanics-n-link-pendulum" target="_blank" rel="noopener noreferrer">https://github.com/p4ntomath/Mechanics-n-link-pendulum</a></li>
+											</ul>
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="section-bottom-indicator" data-section="Research"></div>
+
+					<!-- Miscellaneous / Leadership & Volunteering Section -->
+					<table class="section">
+						<tbody>
+							<tr>
+								<td class="sub-section">
+									<h2 id="Miscellaneous">Leadership &amp; Community Service</h2>
+									<ul>
+										<li><b>Media and Marketing Officer &mdash; Balobedu Students Society, Wits University</b> [Nov 2024 – Nov 2025]<br>
+											<ul>
+												<li>Spearheaded digital communication strategies and campus promotional campaigns to promote student cultural events, society initiatives, and campus-wide participation.</li>
+												<li><b>Skills Gained</b>: Strategic Communications, Digital Marketing, Social Media Engagement, Student Leadership.</li>
+											</ul>
+										</li>
+									</ul>
+
+									<ul>
+										<li><b>Events Coordinator &mdash; Wits Coding &amp; Digital Innovation Society</b> [Nov 2024 – Nov 2025]<br>
+											<ul>
+												<li>Planned, organized, and hosted coding hackathons, technical speaker sessions, and peer-learning workshops to foster software engineering culture among students.</li>
+												<li><b>Skills Gained</b>: Event Management, Public Speaking, Community Building, Agile Coordination.</li>
+											</ul>
+										</li>
+									</ul>
+
+									<ul>
+										<li><b>Community Outreach Volunteer &mdash; Wits Citizenship &amp; Community Outreach</b> [Nov 2024 – Nov 2025]<br>
+											<ul>
+												<li>Assisted in organizing, packing, and distributing essential food and care packages to vulnerable university students and local community members in need.</li>
+												<li><b>Skills Gained</b>: Community Service, Team Logistics, Compassionate Leadership.</li>
+											</ul>
+										</li>
+									</ul>
+
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="section-bottom-indicator" data-section="Miscellaneous"></div>
+
+				</td>
+		</tr>
+	</table>
+
+	<site-footer></site-footer>
+
+</body>
+</html>

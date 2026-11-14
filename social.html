@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Social Media &mdash; Mahlatse Rabothata</title>
+
+	<meta name="author" content="Mahlatse Rabothata">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Connect with Mahlatse Rabothata across professional and social platforms — GitHub, LinkedIn, Email, WhatsApp, and more.">
+
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://mahlatse-rabothata.me/social">
+
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://mahlatse-rabothata.me/social">
+	<meta property="og:title" content="Social Media &mdash; Mahlatse Rabothata">
+	<meta property="og:description" content="Connect with Mahlatse Rabothata across professional and social platforms.">
+	<meta property="og:image" content="images/avatar.webp">
+	<meta property="og:locale" content="en_US">
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Social Media &mdash; Mahlatse Rabothata">
+	<meta name="twitter:description" content="Connect with Mahlatse Rabothata across professional and social platforms.">
+	<meta name="twitter:image" content="images/avatar.webp">
+
+	<!-- Security -->
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+	<meta http-equiv="Content-Security-Policy"
+		content="default-src 'self';
+				 script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com;
+				 style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+				 font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net;
+				 img-src 'self' data: https:;
+				 connect-src 'self' https://formsubmit.co https://www.google-analytics.com;">
+
+	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+	<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+
+	<link rel="preload" href="js/components.js" as="script">
+	<link rel="preload" href="css/stylesheet.min.css" as="style">
+	<link rel="preload" href="https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2" as="font"
+		type="font/woff2" crossorigin>
+	<link rel="preload" href="https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2" as="font"
+		type="font/woff2" crossorigin>
+
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mail.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+		media="print" onload="this.media='all'" />
+	<noscript>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+	</noscript>
+
+	<!-- Immediate theme detection to prevent flash -->
+	<script>
+		(function () {
+			var stored = localStorage.getItem('theme');
+			if (stored === 'dark' || (!stored && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+				document.documentElement.classList.add('dark-mode');
+			}
+		})();
+		if (sessionStorage.getItem('scrollFromBottom') === '1') {
+			sessionStorage.removeItem('scrollFromBottom');
+			history.scrollRestoration = 'manual';
+			window._scrollFromBottom = true;
+			document.documentElement.style.visibility = 'hidden';
+		} else {
+			document.documentElement.style.visibility = 'visible';
+		}
+	</script>
+
+	<script src="js/components.js"></script>
+	<script src="js/dark_mode.js" defer></script>
+	<script src="js/mail.js" defer></script>
+	<script src="js/last_modified.js" defer></script>
+	<script src="js/hamburger.js" defer></script>
+	<script src="js/navbar_scroll.js" defer></script>
+
+	<!-- Favicon and App Icons -->
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+	<link rel="manifest" href="site.webmanifest">
+	<meta name="msapplication-TileColor" content="#8dd3e3">
+	<meta name="msapplication-TileImage" content="images/mstile-150x150.png">
+	<meta name="theme-color" content="#8dd3e3">
+
+	<style>
+		.social-grid {
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+			margin-top: 30px;
+			margin-bottom: 40px;
+		}
+
+		.social-item {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+			padding: 14px 18px;
+			border: 1px solid rgba(0, 0, 0, 0.12);
+			border-radius: 10px;
+			background: rgba(0, 0, 0, 0.02);
+			transition: box-shadow 0.2s ease, transform 0.2s ease;
+			text-decoration: none;
+			color: inherit;
+		}
+
+		.social-item:hover {
+			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+			transform: translateY(-2px);
+			color: inherit;
+		}
+
+		html.dark-mode .social-item {
+			border-color: rgba(255, 255, 255, 0.1);
+			background: rgba(255, 255, 255, 0.03);
+		}
+
+		html.dark-mode .social-item:hover {
+			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+		}
+
+		.social-icon {
+			width: 42px;
+			height: 42px;
+			border-radius: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 22px;
+			flex-shrink: 0;
+			color: #fff;
+		}
+
+		.social-name {
+			font-weight: 700;
+			font-size: 15px;
+			min-width: 110px;
+			flex-shrink: 0;
+		}
+
+		.social-url {
+			font-size: 13px;
+			color: #1772d0;
+			word-break: break-all;
+		}
+
+		html.dark-mode .social-url {
+			color: #8aadf4;
+		}
+
+		.social-item:hover .social-url {
+			color: #f09228;
+		}
+
+		/* Platform colors */
+		.icon-github    { background: #24292e; }
+		.icon-linkedin  { background: #0077b5; }
+		.icon-email     { background: #ea4335; }
+		.icon-whatsapp  { background: #25d366; }
+		.icon-phone     { background: #0f9d58; }
+		.icon-web       { background: #4a5568; }
+		.icon-discord   { background: #5865f2; }
+
+		@media screen and (max-width: 600px) {
+			.social-name {
+				min-width: 80px;
+			}
+			.social-url {
+				font-size: 11.5px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<a href="#main-content" class="skip-link">Skip to main content</a>
+	<site-navbar></site-navbar>
+
+	<span id="main-content"></span>
+	<table class="section" style="margin-top: 30px;">
+		<tbody>
+			<tr style="padding:0px">
+				<td>
+					<table class="section profile-section">
+						<tbody>
+							<tr style="padding:0px">
+								<td style="width:100%;vertical-align:middle;text-align:center;">
+									<!-- Profile Image -->
+									<div style="margin-bottom: 20px;">
+										<a href="images/avatar.webp">
+											<img style="width:260px;height:260px;max-width:100%;object-fit:cover;border-radius:50%; box-shadow: 0 4px 20px rgba(0,0,0,0.15);"
+												alt="Profile photo of Mahlatse Rabothata"
+												src="images/avatar.webp"
+												class="hoverZoomLink" loading="eager" decoding="async"
+												width="260" height="260">
+										</a>
+									</div>
+
+									<h1 class="name" style="text-align:center;font-size:2.5em;margin-top:10px;margin-bottom:5px;">
+										Mahlatse Rabothata
+									</h1>
+
+									<p style="text-align:center;margin-top:5px;margin-bottom:10px;font-size:0.9em;color:var(--text-secondary, #666);">
+										Connect with me across the web
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<!-- Social Media List -->
+					<div class="social-grid">
+
+						<a class="social-item" href="https://github.com/p4ntomath" target="_blank" rel="noopener noreferrer">
+							<div class="social-icon icon-github">
+								<i class="bi bi-github"></i>
+							</div>
+							<span class="social-name">GitHub</span>
+							<span class="social-url">github.com/p4ntomath</span>
+						</a>
+
+						<a class="social-item" href="https://linkedin.com/in/mahlatse-rabothata-14641a287" target="_blank" rel="noopener noreferrer">
+							<div class="social-icon icon-linkedin">
+								<i class="bi bi-linkedin"></i>
+							</div>
+							<span class="social-name">LinkedIn</span>
+							<span class="social-url">linkedin.com/in/mahlatse-rabothata-14641a287</span>
+						</a>
+
+						<a class="social-item" href="mailto:morwawarabothata5@gmail.com">
+							<div class="social-icon icon-email">
+								<i class="bi bi-envelope-fill"></i>
+							</div>
+							<span class="social-name">Email</span>
+							<span class="social-url">morwawarabothata5@gmail.com</span>
+						</a>
+
+						<a class="social-item" href="https://wa.me/27630311427" target="_blank" rel="noopener noreferrer">
+							<div class="social-icon icon-whatsapp">
+								<i class="bi bi-whatsapp"></i>
+							</div>
+							<span class="social-name">WhatsApp</span>
+							<span class="social-url">+27 63 031 1427</span>
+						</a>
+
+						<a class="social-item" href="tel:+27630311427">
+							<div class="social-icon icon-phone">
+								<i class="bi bi-telephone-fill"></i>
+							</div>
+							<span class="social-name">Phone</span>
+							<span class="social-url">+27 63 031 1427</span>
+						</a>
+
+						<a class="social-item" href="https://mahlatse-rabothata.netlify.app/" target="_blank" rel="noopener noreferrer">
+							<div class="social-icon icon-web">
+								<i class="bi bi-globe"></i>
+							</div>
+							<span class="social-name">HxH Portfolio</span>
+							<span class="social-url">mahlatse-rabothata.netlify.app</span>
+						</a>
+
+					</div>
+
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<script>
+		if (window._scrollFromBottom) {
+			requestAnimationFrame(function () {
+				var startPos = document.body.scrollHeight;
+				window.scrollTo(0, startPos);
+				document.documentElement.style.visibility = 'visible';
+
+				var duration = 900;
+				var startTime = null;
+
+				function easeInOutCubic(t) {
+					return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+				}
+
+				function animate(currentTime) {
+					if (startTime === null) startTime = currentTime;
+					var elapsed = currentTime - startTime;
+					var progress = Math.min(elapsed / duration, 1);
+					window.scrollTo(0, startPos * (1 - easeInOutCubic(progress)));
+					if (elapsed < duration) requestAnimationFrame(animate);
+				}
+
+				requestAnimationFrame(animate);
+			});
+		}
+	</script>
+
+	<site-footer></site-footer>
+
+</body>
+</html>

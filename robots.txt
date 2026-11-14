@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://mahlatse-rabothata.me/sitemap.xml
